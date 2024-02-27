@@ -8,7 +8,7 @@ const manager = new ClusterManager(`./src/cold.js`, {
   shardsPerClusters: 2,
   totalClusters: "auto",
   mode: 'process',
-  token: 'MTE4ODMwOTQ4ODk5NDg4MTY2Nw.GFcU7v.Kn0VLCxWMXlGw2PTADsgKltApr1hSIiYbHpvqA',
+  token: 'token',
 });
 manager.on('clusterCreate', cluster => console.log(`Launched Cluster ${cluster.id}`));
 manager.spawn({ timeout: -1 });
